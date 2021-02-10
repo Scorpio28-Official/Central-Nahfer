@@ -2,32 +2,7 @@
 
 clear
 
-setterm -foreground blue
+numero=$(dialog --stdout --title "-" --inputbox "ESCRIBE EL NUMERO,CON CODIGO DEL PAIS Y  SIN ESPACIO." 15 71)
 
-echo "
-
-██████╗░██╗░░██╗░█████╗░███╗░░██╗███████╗
-██╔══██╗██║░░██║██╔══██╗████╗░██║██╔════╝
-██████╔╝███████║██║░░██║██╔██╗██║█████╗░░
-██╔═══╝░██╔══██║██║░░██║██║╚████║██╔══╝░░
-██║░░░░░██║░░██║╚█████╔╝██║░╚███║███████╗
-╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚══╝╚══════╝
-░██████╗░█████╗░░█████╗░███╗░░██╗███████╗██████╗░
-██╔════╝██╔══██╗██╔══██╗████╗░██║██╔════╝██╔══██╗
-╚█████╗░██║░░╚═╝███████║██╔██╗██║█████╗░░██████╔╝
-░╚═══██╗██║░░██╗██╔══██║██║╚████║██╔══╝░░██╔══██╗
-██████╔╝╚█████╔╝██║░░██║██║░╚███║███████╗██║░░██║
-╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝
-"
-
-echo " Creador del Ejecutador:Capitán Comando"
-echo
-echo "Ingresa el Numero con codigo de pais sin el (+) y sin espació"
-echo
-echo
-echo "Ingresa El Numero
--->"
-
-read numero
-
-python3 P.py -n $numero
+dialog --title "INFORMACION DEL NUMERO" \
+      --prgbox "python3 P.py -n $numero" 30 80
