@@ -7,10 +7,12 @@ comandos de intalacion
 
 apt update && apt update -y
 
-git clone https://github.com/capitancomando/Nahfer-Central-tools
+git clone https://github.com/capitancomando/Central-Nahfer
 
-chmod 711 Nahfer-Tools
+bash install.sh 
+
+chmod 711 Nahfer-Hacking.sh
 
 ls
 
-bash Nahfer-Tools
+bash Nahfer-Hacking.sh

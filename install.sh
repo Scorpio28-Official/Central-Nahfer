@@ -84,3 +84,4 @@ pip2 install argparse
 pip2 install urllib3
 pip2 install colorama
 pip3 install proxylist
+pip3 install pysocks
