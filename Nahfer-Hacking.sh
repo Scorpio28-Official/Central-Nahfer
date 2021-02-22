@@ -61,8 +61,6 @@ menuitem=$(dialog --backtitle "NAHFER HACKING" --stdout --title "CENTRAL NAHFER 
     4 "Almanezamiento" \
     5 "Nahfer-Tools" \
     6 "Nahfer Hacking" \
-    7 "PhoneScanner" \
-    8 "Nahfer-Phisher" \
     99 "Ajustes")
 chosen=$?
 
@@ -82,8 +80,10 @@ chmod 777 cleaner-007.sh
 bash cleaner-007.sh
       elif [[ $menuitem == 3 ]]; then
             cp Nahfer-Hacking.sh /data/data/com.termux/files/home
+cd $HOME
 git clone https://github.com/capitancomando/Central-Nahfer
 cd Central-Nahfer
+chmod 777 Nahfer-Hacking.sh
 bash Nahfer-Hacking.sh
             
         elif [[ $menuitem == 4 ]]; then
@@ -94,15 +94,6 @@ bash Nahfer-Hacking.sh
 bash Nahfer-Tools.sh
         elif [[ $menuitem == 6 ]]; then
 menu_principal
-
-        elif [[ $menuitem == 7 ]]; then
-cd /data/data/com.termux/files/home/Central-Nahfer/datos/scripts/PhoneScanner
-
-python3 -m pip install -r requirements.txt
-bash PhoneScanner.sh
-        elif [[ $menuitem == 8 ]]; then
-       cd /data/data/com.termux/files/home/Central-Nahfer/datos/scripts/Phisher
- bash Nahfer-Phish.sh 
 
       ###############INICIO DE MENU DE AJUSTES ###################
    

@@ -1,5 +1,6 @@
 clear
-pkg install dislog -y
+pkg install lolcat -a
+pkg install dialog -y
 pkg install play-audio -y
 clear
 play-audio /data/data/com.termux/files/home/Central-Nahfer/datos/sonidos/lobo-aullando.m4a &
@@ -48,7 +49,7 @@ echo "INSTALANDO RECURSOS" | lolcat -a
 sleep 1
 echo
 cd /data/data/com.termux/files/usr/etc
-mv bash.bashrc /data/data/com.termux/files/home/Central-Nahfer/datos/textos-temporales
+cp bash.bashrc /data/data/com.termux/files/home/Central-Nahfer/datos/textos-temporales
 cd $HOME/Central-Nahfer
 cd /data/data/com.termux/files/home/Central-Nahfer/datos/textos-temporales
 cp Nahfer $HOME
@@ -85,3 +86,24 @@ pip2 install urllib3
 pip2 install colorama
 pip3 install proxylist
 pip3 install pysocks
+pip install lolcat
+pip2 install lolcat
+pip3 install lolcat
+pkg install nmap -y
+pip2 install bs4
+pip2 install time
+pip2 install json
+pip2 install urllib
+pip2 install urllib2
+pip2 install socket
+pip2 installhttplib
+pip2 install hashlib
+pip2 install datetime
+pip2 install termcolor
+pip2 install requests
+pop2 install mechanize
+pip2 install subprocess
+pip2 install HTMLParser
+pip2 install BeautifulSoup
+pip2 install --upgrade html5lib
+pip2 install --upgrade beautifulsoup4

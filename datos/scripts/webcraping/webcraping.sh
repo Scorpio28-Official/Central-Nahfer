@@ -50,8 +50,8 @@ function menu_principal() {
 [8] Scanner web avanzado.
 [9] Extras.
 [10] Descargar Archivos web.
-[11]
-[12]
+[11] RED_HAWK
+[12] Optiva Framework
 [13]
 [14]
 [15]
@@ -135,7 +135,17 @@ python2 Real-DNS
                          cd /data/data/com.termux/files/home/Central-Nahfer/datos/scripts/scanneos-web/ejecutables
                          bash scanneos-web.sh			
 ;;
-                       *) clear
+             
+
+                        11) clear
+cd /data/data/com.termux/files/home/Central-Nahfer/datos/scripts/webcraping/herramientas/RED_HAWK
+php rhawk.php ;;
+
+                        12) clear
+cd /data/data/com.termux/files/home/Central-Nahfer/datos/scripts/webcraping/herramientas/Optiva-Framework
+clear
+python2 optiva.py ;;
+               *) clear
 				banner
 				echo -e "${verde}[${blanco}*${verde}]${blanco} La opcion que ingreso no existe"
 				sleep 1.3s; clear; dox_2
