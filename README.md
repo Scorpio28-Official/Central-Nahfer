@@ -10,6 +10,8 @@ apt update && apt update -y
 
 git clone https://github.com/capitancomando/Central-Nahfer
 
+cd Central-Nahfer 
+
 bash install.sh 
 
 chmod 711 Nahfer-Hacking.sh
