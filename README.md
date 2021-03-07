@@ -23,9 +23,10 @@ bash Nahfer-Hacking.sh
 Pronto sera compatible con varias distribuciones linux.
 
 *KALI LINUX*,
+<html>
 *Ubuntu*,
 *Parrot*,
-*Debian*,
+*Debian*
 
 NAHFER-HACKING:se actualiza cada 7 dias.
 Puedes actualizarlo desde el mismo script.
