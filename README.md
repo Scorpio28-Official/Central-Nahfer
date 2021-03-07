@@ -21,4 +21,9 @@ bash Nahfer-Hacking.sh
 
 <img src="https://wwwlegionhackingnahferdata.files.wordpress.com/2020/11/54-9-11-2466-4595-20201023_072309817920374-424317895.jpg?w=300">
 
-<3>Pronto sera compatible con varias distribuciones linux.<3>
+Pronto sera compatible con varias distribuciones linux.
+
+*KALI LINUX*
+*Ubuntu*
+*Parrot*
+*Debian*
