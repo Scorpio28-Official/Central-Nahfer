@@ -24,27 +24,39 @@ Pronto sera compatible con varias distribuciones linux.
 
 *KALI LINUX*,
 <html>
-*Ubuntu*,
-*Parrot*,
+*Ubuntu*
+<htlm>
+*Parrot*
+<html>
 *Debian*
 
 NAHFER-HACKING:se actualiza cada 7 dias.
 Puedes actualizarlo desde el mismo script.
 
 Nahfer-Hacking-V6
+<htlm>
 En esta versión se han agregados mas herramientas.
+<htlm>
 Tiene un mejor entorno grafico.
+<htlm>
 Contiene Nuevos Themas de colores tanto para el banner y para las ventanas.
-
+<htlm>
 "Para la Proxima Actualizacion"
 "Nahfer-Hacking. versión 6.5
 
 °Tendra Soporte para otras distribuciones linux.
+<html>
 °Tendra acceso Root.
+<html>
 °Mas herramientas de vulnerabilidades.
+<htlm>
 °Nuevos servidores.
+<htlm>
 °Nuevos scripts y herramientas.
+<htlm>
 °Instalacion de Sistemas operativos.
+<htlm>
 °Instalacion De metasploit.
+<htlm>
 °Instalacion de ubuntu kali entre otras emulaciones.
 
