@@ -31,7 +31,8 @@ Pronto sera compatible con varias distribuciones linux.
 </html>
 *Debian*
 
-NAHFER-HACKING:se actualiza cada 7 dias.
+NAHFER-HACKING:
+se actualiza cada 7 dias.
 Puedes actualizarlo desde el mismo script.
 
 Nahfer-Hacking-V6
@@ -50,14 +51,14 @@ Contiene Nuevos Themas de colores tanto para el banner y para las ventanas.
 °Tendra acceso Root.
 <html>
 °Mas herramientas de vulnerabilidades.
-<htlm>
+<html>
 °Nuevos servidores.
-<htlm>
+<html>
 °Nuevos scripts y herramientas.
-<htlm>
+<html>
 °Instalacion de Sistemas operativos.
-<htlm>
+<html>
 °Instalacion De metasploit.
-<htlm>
+<html>
 °Instalacion de ubuntu kali entre otras emulaciones.
-
+<html>
