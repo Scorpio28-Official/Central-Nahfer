@@ -25,7 +25,7 @@ Pronto sera compatible con varias distribuciones linux.
 *KALI LINUX*,
 <html>
 *Ubuntu*
-<htlm>
+</htlm>
 *Parrot*
 <html>
 *Debian*
