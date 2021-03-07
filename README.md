@@ -22,12 +22,18 @@ bash Nahfer-Hacking.sh
 
 Pronto sera compatible con varias distribuciones linux.
 
-*KALI LINUX*,
+*KALI LINUX*
+,
 <html>
+
 *Ubuntu*
+
 </htlm>
+
 <html>
+
 *Parrot*
+
 </html>
 *Debian*
 
@@ -41,11 +47,15 @@ Nahfer-Hacking-V6
 <htlm>
 En esta versión se han agregados mas herramientas.
 <htlm>
+
 Tiene un mejor entorno grafico.
 <htlm>
+
 Contiene Nuevos Themas de colores tanto para el banner y para las ventanas.
 <htlm>
+
 "Para la Proxima Actualizacion"
+
 "Nahfer-Hacking. versión 6.5
 
 °Tendra Soporte para otras distribuciones linux.
