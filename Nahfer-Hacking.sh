@@ -57,7 +57,7 @@ menuitem=$(dialog --backtitle "NAHFER HACKING" --stdout --title "CENTRAL NAHFER 
     0 "Contacto" \
     1 "Administrador de archivos" \
     2 "Analizador de archivos" \
-    3 "Borrar y Actualizar Script" \
+    3 "Actualizar Script" \
     4 "Almanezamiento" \
     5 "Nahfer-Tools" \
     6 "Nahfer Hacking" \
@@ -83,6 +83,8 @@ bash cleaner-007.sh
       elif [[ $menuitem == 3 ]]; then
             cp Nahfer-Hacking.sh /data/data/com.termux/files/home
 cd $HOME
+rm -rf Central-Nahfer
+rm Nahfer-Hacking.sh
 git clone https://github.com/capitancomando/Central-Nahfer
 cd Central-Nahfer
 chmod 777 Nahfer-Hacking.sh
