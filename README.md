@@ -26,8 +26,9 @@ Pronto sera compatible con varias distribuciones linux.
 <html>
 *Ubuntu*
 </htlm>
-*Parrot*
 <html>
+*Parrot*
+</html>
 *Debian*
 
 NAHFER-HACKING:se actualiza cada 7 dias.
