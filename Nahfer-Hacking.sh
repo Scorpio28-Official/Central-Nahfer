@@ -61,7 +61,9 @@ menuitem=$(dialog --backtitle "NAHFER HACKING" --stdout --title "CENTRAL NAHFER 
     4 "Almanezamiento" \
     5 "Nahfer-Tools" \
     6 "Nahfer Hacking" \
-    99 "Ajustes")
+    7 "Instalaciones" \
+    8 "descargar sistemas iso" \
+    9 "Ajustes")
 chosen=$?
 
 case $chosen in
@@ -88,136 +90,18 @@ bash Nahfer-Hacking.sh
             
         elif [[ $menuitem == 4 ]]; then
             echo "option 4"
-            
+menu_principal            
         elif [[ $menuitem == 5 ]]; then
           cd /data/data/com.termux/files/home/Central-Nahfer/datos/scripts/Nahfer-Tools
 bash Nahfer-Tools.sh
         elif [[ $menuitem == 6 ]]; then
 menu_principal
-
-      ###############INICIO DE MENU DE AJUSTES ###################
-   
-           elif [[ $menuitem == 99 ]]; then
-cd /data/data/com.termux/files/home/Central-Nahfer/datos/sonidos
-play-audio ajustes.m4a &
-sleep 1
-menuitem=$(dialog --backtitle "NAHFER HACKING" --stdout --title "AJUSTES" \
-    --menu "" 10 50 1 \
-    1 "Informacion android" \
-    2 "Sonidos" \
-    3 "Temas" \
-    4 "Seguridad")
- #   5 "INFORMACION" \
-#    6 "salir" \
-
-chosen=$?
-
-case $chosen in
-    0)
-        echo $(clear)
-        if [[ $menuitem == 1 ]]; then
-  neofetch 
-echo "CLICK ENTER PARA VOLVER AL MENU PRINCIPAL" | lolcat -a
-echo
-read
-principio
-###############OPCION DE MENU DE SONIDOS############################
-  elif [[ $menuitem == 2 ]]; then
-
-menuitem=$(dialog --backtitle "NAHFER HACKING" --stdout --title "AJUSTES DE SONIDOS" \
-    --menu "" 10 50 1 \
-                    1 "Activar Sonidos" \
-                    2 "Desactivar Sonidos" )
-chosen=$?
-
-case $chosen in
-    0)
-        echo $(clear)
-        if [[ $menuitem == 1 ]]; then
-echo "activando sonidos"
-cd /data/data/com.termux/files/home/Central-Nahfer/datos
-
-mv sonidos-off sonidos
-
-cd /data/data/com.termux/files/home/Central-Nahfer
-
-bash Nahfer-Hacking.sh
-        elif [[ $menuitem == 2 ]]; then
-echo "desactivando sonidos"
-cd /data/data/com.termux/files/home/Central-Nahfer/datos
-
-mv sonidos sonidos-off
-
-cd /data/data/com.termux/files/home/Central-Nahfer
-
-bash Nahfer-Hacking.sh
-fi
-
-;;
-
-1)
-        echo "cancelado .."
-        ;;
-    255)
-        echo ""
-        echo $(clear);exit 1
-        ;;
-
-esac
-##################TERMINACON DE AJUSTES DE MENU SONIDOS#############  
-
-elif [[ $menuitem == 3 ]]; then
-menuitem=$(dialog --backtitle "NAHFER HACKING" --stdout --title "AJUSTES" \
-    --menu "" 10 50 1 \
-    1 "TEMAS BANNER" \
-    2 "TEMAS DIALOG" )
-chosen=$?
-
-case $chosen in
-    0)
-        echo $(clear)
-        if [[ $menuitem == 1 ]]; then
-           cd /data/data/com.termux/files/home/Central-Nahfer/datos/scripts/sh
-           bash userbanner.sh 
-        elif [[ $menuitem == 2 ]]; then
-themas_dialog_ventana
-else
-            echo "exit"
-            exit 0
-        fi
-        ;;
-    1)
-        echo "cancelado .."
-        ;;
-    255)
-        echo ""
-        echo $(clear);exit 1
-        ;;
-
-esac
-
-#########################################
-  elif [[ $menuitem == 4 ]]; then
-            echo "muy pronto"
-        elif [[ $menuitem == 5 ]]; then
-            echo "muy pronto"
-        else
-            echo "exit"
-            exit 0
-        fi
-        ;;
-    1)
-        echo "cancelado .."
-        ;;
-    255)
-        echo ""
-        echo $(clear);exit 1
-        ;;
-
-esac
-
-###########ARRRIBA SON MENUS FALTANTES ##########
-
+       elif [[ $menuitem == 7 ]]; then
+instalaciones_menu
+       elif [[ $menuitem == 8 ]]; then
+ls
+       elif [[ $menuitem == 9 ]]; then
+mi_ajustes
         else
             echo "exit"
             exit 0
@@ -334,7 +218,7 @@ ataques_ddos
         elif [[ $menuitem == 5 ]]; then
             echo "muy pronto"
         elif [[ $menuitem == 6 ]]; then
-echo "muy pronto"
+mi_doxing
 else
             echo "exit"
             exit 0
@@ -370,7 +254,7 @@ case $chosen in
     0)
         echo $(clear)
           if [[ $menuitem == 1 ]]; then
-   ls
+mis_phishing
         elif [[ $menuitem == 2 ]]; then
 acortador_tinity
         elif [[ $menuitem == 3 ]]; then
@@ -549,6 +433,190 @@ bash dripper.sh
 esac
 }
 ##############-----##############
-principio
+
 #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
+###################AJUSTES-##########################
+function mi_ajustes(){
+cd /data/data/com.termux/files/home/Central-Nahfer/datos/sonidos
+play-audio ajustes.m4a &
+sleep 1
+ajustes=$(dialog --backtitle "NAHFER HACKING" --stdout --title "AJUSTES" \
+    --menu "" 10 50 1 \
+    1 "Informacion android" \
+    2 "Sonidos" \
+    3 "Temas" \
+    4 "Seguridad")
+chosen=$?
+
+case $chosen in
+    0)
+        echo $(clear)
+        if [[ $ajustes == 1 ]]; then
+  neofetch 
+echo "CLICK ENTER PARA VOLVER AL MENU PRINCIPAL" | lolcat -a
+echo
+read
+principio
+        elif [[ $ajustes == 2 ]]; then
+cd /data/data/com.termux/files/home/Central-Nahfer/datos/sonidos
+bash sonidos.sh
+        elif [[ $ajustes == 3 ]]; then
+            menu_temas
+        elif [[ $ajustes == 4 ]]; then
+            echo "muy pronto"
+        else
+            echo "exit"
+        fi
+        ;;
+    1)
+        ;;
+    255)
+        echo ""
+            ;;
+
+esac
+}
+#########################################################
+function menu_temas(){
+thema_menu=$(dialog --backtitle "NAHFER HACKING" --stdout --title "PIRATERIA HACKING" \
+    --menu "" 15 51 6 \
+    1 "Banner" \
+    2 "Ventana" \
+    3 "Volver Atras.")
+
+chosen=$?
+
+case $chosen in
+    0)
+        echo $(clear)
+        if [[ $thema_menu == 1 ]]; then
+cd $HOME/Central-Nahfer/datos/scripts/sh
+           bash userbanner.sh 
+        elif [[ $thema_menu == 2 ]]; then
+            themas_dialog_ventana
+        elif [[ $thema_menu == 3 ]]; then
+             mi_ajustes
+        else
+            echo "exit"
+        fi
+        ;;
+    1)
+        echo "cancelado .."
+        ;;
+    255)
+        echo ""
+        ;;
+
+esac
+
+
+}
+########################################################
+function mi_doxing(){
+clear
+
+doxeos=$(dialog --backtitle "NAHFER HACKING" --stdout --title "DOXING." \
+    --menu "" 15 51 6 \
+    0 "Crear Plantilla" \
+    1 "DoxTracker." \
+    2 "DoxWeb." \
+    3 "Doxing-Error404." \
+    4 "Doxing." \
+    5 "Doxing2." \
+    6 "DOXing." \
+    7 "DFW." \
+    8 "INFORMACION."\
+    9 "VOLVER ATRAS.")
+chosen=$?
+
+case $chosen in
+    0)
+        echo $(clear)
+        if [[ $doxeos == 0 ]]; then
+ls
+        elif [[ $doxeos == 1 ]]; then
+cd $HOME/Central-Nahfer/datos/scripts/doxing/DoxTracker
+        elif [[ $doxeos == 2 ]]; then
+cd $HOME/Central-Nahfer/datos/scripts/doxing/DoxWeb
+bash DoxWeb.sh
+        elif [[ $doxeos == 3 ]]; then
+cd $HOME/Central-Nahfer/datos/scripts/doxing/Doxing-Error404
+python2 doxingE404.py
+        elif [[ $doxeos == 4 ]]; then
+cd $HOME/Central-Nahfer/datos/scripts/doxing/Doxing
+python2 Doxing.py
+        elif [[ $doxeos == 5 ]]; then
+cd $HOME/Central-Nahfer/datos/scripts/doxing/Doxing2
+python3 Looking_Glass.py2
+         elif [[ $doxeos == 6 ]]; then
+cd $HOME/Central-Nahfer/datos/scripts/doxing/DOXing
+python3 
+         elif [[ $doxeos == 7 ]]; then
+cd $HOME/Central-Nahfer/datos/scripts/doxing/DFW
+python2 Doxing-Framework.py
+          elif [[ $doxeos == 8 ]]; then
+cd $HOME/Central-Nahfer/datos/scripts/doxing/Information
+python Information.py
+         elif [[ $doxeos == 9 ]]; then
+menu_principal
+ else
+            echo "exit"
+            exit 0
+        fi
+        ;;
+    1)
+        ;;
+    255)
+        echo ""
+        echo $(clear);exit 1
+        ;;
+
+esac
+
+
+}
+
+function mis_phishing(){
+Phishing=$(dialog --backtitle "NAHFER HACKING" --stdout --title "PIRATERIA HACKING" \
+    --menu "" 15 51 6 \
+    1 "FotoSploit." \
+    2 "Nahfer-Phishing." \
+    3 "Blackeye." \
+    4 "SocialSploit." \
+    5 "Weeman" \
+    6 "PhishMailer")
+
+chosen=$?
+
+case $chosen in
+    0)
+        echo $(clear)
+        if [[ $Phishing == 1 ]]; then
+echo "muy pronto"
+        elif [[ $Phishing == 2 ]]; then
+            echo "muy pronto"
+        elif [[ $Phishing == 3 ]]; then
+            echo "muy pronto"
+        elif [[ $Phishing == 4 ]]; then
+            echo "muy pronto"
+        elif [[ $Phishing == 5 ]]; then
+            echo "muy pronto"
+        elif [[ $Phishing == 6 ]]; then
+echo "Muy Pronto"
+        else
+            echo "exit"
+            exit 0
+        fi
+        ;;
+    1)
+        echo "cancelado .."
+        ;;
+    255)
+        echo ""
+        echo $(clear);exit 1
+        ;;
+
+esac
+}
+principio

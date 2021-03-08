@@ -107,3 +107,10 @@ pip2 install HTMLParser
 pip2 install BeautifulSoup
 pip2 install --upgrade html5lib
 pip2 install --upgrade beautifulsoup4
+apt update && apt upgrade
+pkg update && pkg upgrade
+pkg install python python2 figlet toilet ruby nodejs -y
+npm install -g bash-obfuscate
+gem install lolcat -y
+pip install requests
+pip2 install requests

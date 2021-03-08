@@ -52,8 +52,8 @@ function menu_principal() {
 [10] Descargar Archivos web.
 [11] RED_HAWK
 [12] Optiva Framework
-[13]
-[14]
+[13] Bughunter
+[14] Dirsearch
 [15]
 [16]
 [17]
@@ -125,8 +125,7 @@ dialog --title "archivo fstab" --textbox $sundomain.txt 15 70
 echo $port >>$port.txt
 dialog --title "archivo fstab" --textbox $port.txt 15 70
 	;;
-			7)
-clear
+			7)clear
 cd /data/data/com.termux/files/home/Central-Nahfer/datos/scripts/webcraping/herramientas
 python2 Real-DNS
 				;;
@@ -145,7 +144,18 @@ php rhawk.php ;;
 cd /data/data/com.termux/files/home/Central-Nahfer/datos/scripts/webcraping/herramientas/Optiva-Framework
 clear
 python2 optiva.py ;;
-               *) clear
+     
+                       13) clear
+
+cd /data/data/com.termux/files/home/Central-Nahfer/datos/scripts/webcraping/herramientas/bughunter
+clear
+python2 bughunter.py
+;;
+                       14) clear
+cd $HOME/Central-Nahfer/datos/scripts/webcraping/herramientas/dirsearch
+bash Pregunta.sh
+;;
+         *) clear
 				banner
 				echo -e "${verde}[${blanco}*${verde}]${blanco} La opcion que ingreso no existe"
 				sleep 1.3s; clear; dox_2
